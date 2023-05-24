@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, TouchableOpacity, TextInput, } from "react-native";
+  import { View, Text, StyleSheet, TouchableOpacity, TextInput, } from "react-native";
   import React from "react";
   import { MaterialIcons } from "@expo/vector-icons";
   
@@ -11,15 +11,15 @@ import { View, Text, StyleSheet, TouchableOpacity, TextInput, } from "react-nati
         <TouchableOpacity
           onPress={() => navigation.goBack()}
           style={styles.goBack}>
-          <MaterialIcons name="arrow-back-ios" size={24} color="black" />
+          <MaterialIcons name="arrow-back-ios" size={20} color="black" />
         </TouchableOpacity>
         <View style={{ paddingHorizontal: 15 }}>
-          <View style={{ marginTop: 80 }}>
-            <Text style={{ fontSize: 36, fontWeight: "bold", color: "#7d1b78" }}>
-              Sign Up
+          <View style={{ marginTop: 1 }}>
+            <Text style={{ fontSize: 32, fontWeight: "bold", color: "#7d1b78" }}>
+              Sign up
             </Text>
           </View>
-          <View style={{ marginTop: 80 }}>
+          <View style={{ marginTop: 30 }}>
             <TextInput
               placeholder="Surname"
               style={{
@@ -109,10 +109,10 @@ import { View, Text, StyleSheet, TouchableOpacity, TextInput, } from "react-nati
               justifyContent: "center",
               flexDirection: "row",
             }}>
-            <Text>Already have account ?</Text>
+            <Text>Already have an account ?</Text>
             <TouchableOpacity onPress={() => navigation.navigate("Login")}>
               <Text
-                style={{ fontWeight: "700", color: "#7d1b78", marginLeft: 10 }}>
+                style={{ fontWeight: "700", color: "#7d1b78", marginLeft: 15 }}>
                 LOGIN
               </Text>
             </TouchableOpacity>
@@ -123,6 +123,7 @@ import { View, Text, StyleSheet, TouchableOpacity, TextInput, } from "react-nati
   };
   
   export default SignupScreen;
+  
   
   const styles = StyleSheet.create({
     goBack: {

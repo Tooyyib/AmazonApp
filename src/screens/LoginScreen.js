@@ -9,7 +9,7 @@ const LoginScreen = ({ navigation }) => {
     <View style={{ flex: 1 }}>
       <View style={{ paddingHorizontal: 15 }}>
         <View style={{ marginTop: 80 }}>
-          <Text style={{ fontSize: 36, fontWeight: "bold", color: "#7d1b78" }}>
+          <Text style={{ fontSize: 32, fontWeight: "bold", color: "#7d1b78" }}>
             Login
           </Text>
         </View>
@@ -34,7 +34,7 @@ const LoginScreen = ({ navigation }) => {
             }}
           />
         </View>
-        <TouchableOpacity
+      <TouchableOpacity onPress={() => navigation.navigate("Home")}
           style={{
             marginTop: 20,
             backgroundColor: "#7d1b78",

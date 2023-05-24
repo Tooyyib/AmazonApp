@@ -18,7 +18,7 @@ function OnboardScreen({ navigation }) {
           opacity: 0.9,
         }}>
         <View style={{ flex: 1, paddingHorizontal: 10 }}>
-          <View style={{ flex: 1 }}></View>
+          <View style={{ flex: 2 }}></View>
           <View style={{ flex: 1 }}>
             <Text
               style={{
@@ -30,7 +30,7 @@ function OnboardScreen({ navigation }) {
                 textShadowOffset: { width: -1, height: 1 },
                 textShadowRadius: 10,
               }}>
-              Welcome to <Text style={{ color: "red" }}>Amazon</Text> online
+              Welcome to <Text style={{ color: "yellow" }}>Amazon</Text> online
               Shopping.
             </Text>
             <Text
